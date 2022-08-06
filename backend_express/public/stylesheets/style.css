@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.modal-header{
+  width: 400; color: green;
+  background-color: #DEDCDA;
+}
+
+body{
+  background: #0F2027;  
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+
+}
+
+.modal-dialog{
+  width: 401;
+  background-color: #FFFFFF
+}
+
+h1{
+font-family: verdana;
+font-size: 25px; 
+text-align: center; 
+width:370}
+
+.modal-body{width: 400}

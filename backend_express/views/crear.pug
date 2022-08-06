@@ -1,0 +1,45 @@
+head
+  meta(charset='utf-8')
+  title Guardería
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
+  link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    .modal-dialog
+        .modal-content
+          // Modal Header
+          .modal-header
+            button.close(type="button", data-dismiss="modal")
+              span(aria-hidden="true")
+              span.sr-only Close
+            h1#myModalLabel.modal-title
+              | REGISTRO DE JUGUETES Y MASCOTAS
+          // Modal body
+          .modal-body
+            form(role='form' method='POST' action='http://localhost:3000/guarderia')
+              .form-group 
+                label(for='pname')  Nombre de la mascota:
+                input#pname.form-control(type='text', name='pname')
+              .form-group 
+                label(for='age')  Edad de la mascota:
+                input#age.form-control(type='text', name='age')
+              .form-group
+                label(for='pType') Tipo de mascota:
+                input#pType.form-control(type='text', name='pType')
+              .form-group
+                label(for='breed') Raza de la mascota:
+                input#breed.form-control(type='text', name='breed')
+              .form-group
+                label(for='pdescription') Descripción de la mascota (Opcional):
+                input#pdescription.form-control(type='text', name='pdescription')
+              .form-group
+                label(for='toy') Nombre del juguete:
+                input#tname.form-control(type='text', name='tname')
+              .form-group
+                label(for='color') Color del juguete:
+                input#color.form-control(type='text', name='color')
+              
+              button.btn.btn-primary(type="submit", name="asdf") Registrar
+          // Modal Footer
+          .modal-footer
+            h4 footer
