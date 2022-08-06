@@ -1,2 +1,2 @@
 # PracticaDB
-Practica de miniaplicación
+Práctica de miniaplicación
